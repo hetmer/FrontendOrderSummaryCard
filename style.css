@@ -1,0 +1,155 @@
+ @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+ 
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.card{
+    background-color: hsl(225, 100%, 98%);
+    width: 400px;
+    height: 520px;
+    border-radius: 20px;
+}
+
+.dancing-image img{
+    width: 400px;
+    height: 180px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight:700;
+}
+
+.para{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight:700;
+    padding: 0 40px;
+    color: hsla(245, 26%, 47%, 0.61);
+    line-height: 22px;
+}
+
+.plan-box{
+    width: 275px;
+    height: 67px;
+    background-color: hsl(225, 100%, 94%);
+    margin: 15px 0px 20px 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.desc p{
+    color: gray;
+    font-size: 14px;
+}
+
+.link a{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.btn1{
+    display: block;
+    width: 300px;
+    background-color:hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.8em 0;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.btn1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn1:hover{
+    background-color: blueviolet;
+}
+
+.btn2{
+    display: block;
+    width: 300px;
+    background-color:hsl(225, 100%, 94%);
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.8em 0;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    margin: 10px 0px 0px 50px; 
+    
+}
+
+.btn2 a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn2:hover{
+    background-color: rgb(127, 101, 151);
+    color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+    .box{
+        overflow: hidden;
+    }
+
+    .card{
+        width: auto;
+        height: auto;
+    }
+
+    .dancing-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .plan-box{
+        height: auto;
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+
+    .btn1 .btn2{
+       
+        width: 100px;
+        
+    }
+
+}
